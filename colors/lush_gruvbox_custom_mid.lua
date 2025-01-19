@@ -1,6 +1,6 @@
 -- You probably always want to set this in your vim file
 vim.opt.background = 'dark'
-vim.g.colors_name = 'lush_gruvbox_custom'
+vim.g.colors_name = 'lush_gruvbox_custom_mid'
 
 -- By setting our module to nil, we clear lua's cache,
 -- which means the require ahead will *always* occur.
@@ -14,8 +14,8 @@ vim.g.colors_name = 'lush_gruvbox_custom'
 --
 -- The performance impact of this call can be measured in the hundreds of
 -- *nanoseconds* and such could be considered "production safe".
-package.loaded['lush_gruvbox_custom.init'] = nil
+package.loaded['lush_gruvbox_custom_mid.init'] = nil
 
 -- include our theme file and pass it to lush to apply
-require('lush')(require('lush_gruvbox_custom.init'))
+require('lush')(require('lush_gruvbox_custom_mid.init'))
 
